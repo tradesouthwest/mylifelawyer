@@ -43,7 +43,7 @@ artech_breadcrumbs_style();
 					if( have_posts()) :  the_post();
 					
 					the_content(); 
-					endif;
+					//endif;
 					
 					if( $post->comment_status == 'open' ) { 
 						 comments_template( '', true ); // show comments 
@@ -59,6 +59,9 @@ artech_breadcrumbs_style();
 				'prev_text'          => '<i class="fa fa-angle-double-left"></i>',
 				'next_text'          => '<i class="fa fa-angle-double-right"></i>',
 				) ); ?>
+				<?php
+				else: '';
+				endif; ?>
 			</div>
 			<?php if($artech_default_pg_layout == 'artech_rsb'):
 				if ( class_exists( 'WooCommerce' ) ) {
