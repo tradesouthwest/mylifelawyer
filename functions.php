@@ -20,4 +20,7 @@ function astra_child_theme_enqueue_styles() {
 		array( $parenthandle ),
 		$theme->get( 'Version' ) // If you have Version defined in the style header.
 	);
+	if ( is_page( '3796' ) ) {
+        wp_enqueue_style( 'pt-min', get_stylesheet_directory_uri() . '/pt-min.css' );
+    }
 } 

@@ -24,18 +24,11 @@
 
 	<div id="page">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'artech' ); ?></a>
-		<nav id="nav-top">
-		<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'primary_menu',
-							'menu_class' => 'primary-menu',
-						)
-					);
-				?>
-				</nav>
+		
+	<div class="mylaw-header">
 	<?php get_template_part('template-parts/sections/section','header'); ?>
+	</div>
 	<?php get_template_part('template-parts/sections/section','navigation'); ?>
-	
+		
 	<div id="content" class="artech-content">
 	
