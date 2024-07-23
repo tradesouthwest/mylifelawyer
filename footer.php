@@ -94,8 +94,19 @@
 				<?php endif; ?>
             </div>
         </div>
+		<div class="footer-logo">
+            <div class="container">
+                <p class="logo-image">
+					<img src="https://dev.mylifelawyer.com/wp-content/uploads/2024/07/LesterLawLogoWhite.png" alt="Lester Law"/>
+				</p>
+            </div>
+        </div>
         <div class="footer-copyright">
             <div class="container">
+				<div class="copyright-tagline" style="color:#eee;">
+							<a href="/contact" title="contact">Contact</a>&nbsp; •  &nbsp;<a href="/disclaimer" title="disclaimer">Disclaimer</a>&nbsp; •  &nbsp;<a href="/office-policy" title="office-policy">Policies</a><br>
+					<h5>Affordable Lawyer in Denver Colorado | Family Law</h5>
+						</div>
                 <p class="copyright-text">
 					<?php do_action('artech_footer_group_third');	?>
 				</p>
