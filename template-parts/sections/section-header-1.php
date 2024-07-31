@@ -94,14 +94,9 @@ do_action('artech_preloader');
                         </div>
                     </nav>
                     <div class="right-menu">
-                        <ul>
-                            <?php do_action('artech_navigation_cart'); ?>
-                            <li>
-								<?php
-								$hide_show_search = get_theme_mod('hide_show_search', '1');
-								if ($hide_show_search == '1') :
-								?>
+                       
 								<ul class="social-media-links nav navbar-nav navbar-right">
+									
 									<li>
 										<a href="http://www.facebook.com/msLaurenLester" title="facebook">
 											<i class="fa fa-facebook"></i>
@@ -117,59 +112,19 @@ do_action('artech_preloader');
 											<i class="fa fa-linkedin"></i>
 										</a>
 									</li>
+									<li class="">
+										<a href="https://www.tiktok.com/@affordablelawyer" title="tiktok" class="tiktoklink">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg><!--<i class="fa fa-tiktok tiktokicon"></i>-->
+										</a>
+									</li>
 									<li>
-										<a href="https://www.youtube.com/MsLaurenLester" title="youtube">
+										<a href="https://www.youtube.com/@affordablelawyer" title="youtube">
 											<i class="fa fa-youtube"></i>
 										</a>
 									</li>
-									<li>
-										<a href="https://www.tiktok.com/MsLaurenLester" title="tiktok">
-											<i class="fa-brand fa-tiktok"></i>
-										</a>
-									</li>
+									
 								</ul>
-									<!--<a href="#" aria-label="<?php echo esc_attr__('search', 'artech'); ?>" data-bs-toggle="modal" data-bs-target="#search">
-										<i class="fa fa-search"></i>
-									</a>-->
-								<?php endif; ?>
-
-								<div class="modal fade" id="search">
-									<div class="modal-dialog modal-fullscreen">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-											</div>
-											<?php
-											$hide_show_search = get_theme_mod('hide_show_search', '1');
-											if ($hide_show_search == '1') :
-											?>
-
-												<div class="modal-body">
-													<div class="header-search">
-														<form method="get" class="search-form" action="#" aria-label="<?php echo esc_attr__('Search', 'artech'); ?>">
-															<div>
-																<input type="search" class="form-control" placeholder="<?php echo esc_attr__('Search', 'artech'); ?>" name="s">
-																<button type="submit" class="submit-search"><i class="fa fa-search"></i></button>
-															</div>
-														</form>
-													</div>
-												</div>
-											<?php endif; ?>
-										</div>
-									</div>
-								</div>
-							</li>
-
-                            <?php
-                            $tlh_btn_lbl = get_theme_mod('tlh_btn_lbl', 'Buy Now');
-                            $tlh_btn_link = get_theme_mod('tlh_btn_link', '#');
-                            if (!empty($tlh_btn_lbl)) :
-                            ?>
-                                <li>
-                                    <a href="<?php echo esc_url($tlh_btn_link); ?>" class="btn_main" aria-label="book now button"><?php echo esc_html($tlh_btn_lbl); ?></a>
-                                </li>
-                            <?php endif; ?>
-
+								
                         </ul>
                     </div>
                 </div>

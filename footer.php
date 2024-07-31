@@ -125,5 +125,10 @@
 
 <?php 	
 wp_footer(); ?>
+<!-- START Smith.ai Lester Law Chat -->
+    <script type="text/javascript">
+      window.SMITH={},window.SMITH.smithChatAccount="5e683dde-5478-4233-8e76-e8cc32862436"; var script=document.createElement("script"); script.async=!0, script.type="text/javascript",script.src="https://app.smith.ai/chat/widget-latest.js",document.getElementsByTagName("HEAD").item(0).appendChild(script);
+    </script>
+    <!-- END Smith.ai Lester Law Chat -->
 </body>
 </html>
