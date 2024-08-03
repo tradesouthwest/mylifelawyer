@@ -19,27 +19,6 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 as of Jul 23 14:00
 */
-/*
-Theme Name: Artech Child
-Theme URI: https://lite.preview.artechthemes.com/
-Author: Artech Themes
-Author URI: https://artechthemes.com/
-Description: The Artech Business Theme Child theme for making changes to the original theme without having them overwritten by any updates.
-Version: 2.7
-Template: artech
-Tested up to: 6.5
-Requires PHP: 5.6
-License: GPLv3 or later
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
-Text Domain: artech
-Slug: artech
-Tags: blog, custom-background, custom-colors, custom-header, custom-logo, custom-menu, e-Commerce, editor-style, featured-image-header, featured-images, flexible-header, footer-widgets, full-width-template, grid-layout, one-column, portfolio, right-sidebar, sticky-post, theme-options, threaded-comments, translation-ready, two-columns
-Contributors: jajtechnologies
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-*/
 body {
   overflow-x: hidden;
 }
