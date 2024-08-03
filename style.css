@@ -19,6 +19,27 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 as of Jul 23 14:00
 */
+/*
+Theme Name: Artech Child
+Theme URI: https://lite.preview.artechthemes.com/
+Author: Artech Themes
+Author URI: https://artechthemes.com/
+Description: The Artech Business Theme Child theme for making changes to the original theme without having them overwritten by any updates.
+Version: 2.7
+Template: artech
+Tested up to: 6.5
+Requires PHP: 5.6
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: artech
+Slug: artech
+Tags: blog, custom-background, custom-colors, custom-header, custom-logo, custom-menu, e-Commerce, editor-style, featured-image-header, featured-images, flexible-header, footer-widgets, full-width-template, grid-layout, one-column, portfolio, right-sidebar, sticky-post, theme-options, threaded-comments, translation-ready, two-columns
+Contributors: jajtechnologies
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
 body {
   overflow-x: hidden;
 }
@@ -127,10 +148,10 @@ p {
 .home-cover-wide-column {
   min-width: 100vw;
 }
-#about {
+.home-protect-peace {
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: -16px 0 0 0;
 }
 .home-cover-wide-protect {
   padding: 0;
@@ -179,6 +200,11 @@ p {
 	margin-left: auto;
   margin-right: auto;
 }
+.btn-primary {
+	background: #0faf97;
+	border-radius: 0;
+	border: none;
+}
 .wp-block-buttons > .wp-block-button {
   display: block;
   margin: 0 auto;
@@ -207,7 +233,7 @@ p {
   text-shadow: 0 0 2px #ccc;
 }
 .blog-section {
-	padding: 100px 75px;
+	padding: 75px 75px;
 }
 summary {
   background: #fafafa;
@@ -230,13 +256,21 @@ h2.wp-block-heading {
   margin-left: 2%;
 	color:#eee;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .footer-main a {
 	text-decoration: none;
 }
 .footer-item h4 { 
 	color: #fd5052;
+}
+.footer-item .wp-container-core-columns-is-layout-13 {
+	padding: 0;
+  margin: 0;
+}
+.wp-block-list-left, .wp-block-list-right {
+	padding: 0;
+  margin: 0;
 }
 .logo-image {
 	text-align: center;
@@ -248,6 +282,12 @@ h2.wp-block-heading {
 	text-align:center;
 	line-height:1.8;
 }
+.blog-section figure.post-image::before {
+	position: initial;
+}
+.blog-section figure.post-image img {
+	height:100%;
+}
 .post-content .meta span a {
 	color: gray;
 	margin-left: -4px;
@@ -255,6 +295,8 @@ h2.wp-block-heading {
 	padding-bottom: 12px;
   display: inline-flex;
 }
+.comments-area,
+.portfolio-template-default.single .post-content .post-title,
 .post-content .meta .admin,
 .post-content .meta i,
 .lps-taxonomy.category {
@@ -280,6 +322,100 @@ h2.wp-block-heading {
   min-height: 50px;
   margin: 0 auto;
 }
+.home .wp-block-cover:last-of-type {
+	bottom: -16px
+}
+.home .wp-block-buttons.wp-container-core-buttons-is-layout-15 {
+	margin-top:2em;
+}
+.page-template-twowide .blog-section .post-item {
+	border: none;
+}
+.page-template-twowide .post-title {
+	display: none;
+}
+.padd-top-lg {
+	padding-top: 120px;
+}
+.footer-section{
+	background: #000000 !important;
+}
+.footer-section h4{
+	color: white;
+	font-size: 1rem;
+	margin-left: -1em;
+	white-space: nowrap;
+}
+.footer-section a:not(.btn-primary) {
+	color: #0faf97;
+}
+.foot-schedule {
+	text-align:center;
+	padding-right:30px;
+}
+.foot-schedule h4 {
+	font-size: 1.67rem;
+}
+.footer-copyright{
+	padding-top: 45px;
+}
+.textwidget-footer {
+	margin-left: -2em;
+}
+.footer-main #block-27 ul {
+	margin-top: 2em;
+	margin-left: 1.222em;
+	white-space: nowrap;
+}
+.tiktoklink {
+	width: 20px;
+  display: inline-block;
+  height: 20px;
+  position: relative;
+	top: -3px;
+}
+.error_404 .error_404_content h2 {
+  font-size: 2em;
+	color: black;
+  font-weight:bolder;
+	-webkit-text-stroke: 0px currentColor;
+}
+.page .wp-block-cover:last-child{
+ 
+}
+.single .section-title {
+	display: none;
+}
+.blog-section .post-item {
+	border: none;
+}
+.post-content h1 {
+	margin-top: -1.5rem;
+	margin-bottom: 1.5rem;
+}
+.post-content .post-title {
+  font-size: 36px;
+  line-height: 1.42;
+  margin-top: 1rem;
+}
+.post-content a:not(.btn) {
+	color: #0faf97;
+	text-decoration: none;
+}
+.single .meta > .mdot {
+	margin-right:6px;
+}
+h2 strong {
+	font-weight: 500;
+}
+.single-post-header {
+	text-align: center;
+	margin-bottom: 1em;
+}
+.line-height-lg {
+	line-height: 1.75;
+}
+/* Start is in Customizer exclusively */
 @media screen and (max-width: 767px) {
 	.blog-section{
 		padding:15px;
