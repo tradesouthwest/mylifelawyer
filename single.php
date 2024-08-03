@@ -48,17 +48,17 @@ artech_breadcrumbs_style();
 									
 								
 									<div class="post-content">
-										<div class="meta">
-											<span class="admin"><a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>" title="<?php echo esc_url(get_avatar_url(get_the_author_meta( 'name' ))) ?>"><i class="fa fa-user"></i> <?php esc_html(the_author()); ?></a></span>
-											<span class="Category"><a href="#"><i class="fa fa-folder-open"></i> <?php the_category(',',''); ?></a></span>
-											<?php if(has_tag()){ ?>
-											    <span class="tags"><a href="#"><i class="fa fa fa-tags"></i> <?php the_tags(',',''); ?></a></span>
-											 <?php } ?>
+										<div class="single-post-header">
+										<?php the_title('<h1 class="post-title">', '</h1>' ); ?>
+											<div class="meta">
+												<span class="admin-maybe"><a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>" title="<?php echo esc_url(get_avatar_url(get_the_author_meta( 'name' ))) ?>"><?php esc_html(the_author()); ?></a></span> <span class="mdot"> • </span> 
+												<span class="date-heading"><a href="<?php echo esc_url(get_month_link(get_post_time('Y'),get_post_time('m'))); ?>"><span><?php echo esc_html(get_the_date()); ?></span></a></span> <span class="mdot"> • </span>
+												<span class="Category"><a href="#"><?php the_category(',',''); ?></a></span>
+											</div>
 										</div>
-										<?php 
-											the_title('<h1 class="post-title">', '</h1>' );
-											the_content();
-										?> 
+										
+										<?php the_content(); ?>
+										
 										
 									</div>
 									
@@ -69,11 +69,11 @@ artech_breadcrumbs_style();
 									<?php if ( has_post_thumbnail() ) { ?>
 										<figure class="post-image ">	
 											<?php the_post_thumbnail('medium'); ?>
-											<div class="meta top">
+											<!--<div class="meta top">
 												<span class="date">
-													<a href="<?php echo esc_url(get_month_link(get_post_time('Y'),get_post_time('m'))); ?>"><?php echo esc_html(get_the_date('j')); ?><span><?php echo esc_html(get_the_date('M')); ?></span></a>
+													
 												</span>
-											</div>
+											</div>-->
 										</figure>
 									<?php } ?>
 							</div>
@@ -86,6 +86,17 @@ artech_breadcrumbs_style();
                 </div>
                
 				<?php //if($artech_blog_single_layout == 'artech_rsb'): get_sidebar(); endif; ?>
+			
+			<div class="also-like">
+				<h5>YOU MIGHT ALSO LIKE</h5>
+				<?php 
+				$cat = '';
+				$categories = get_the_category();
+				if ( ! empty( $categories ) ) {
+					$cat = esc_html( $categories[0]->name );	
+				}
+				echo do_shortcode( '[recent_posts cat="' . $cat . '"]' ); ?>
+			</div>
             </div><!-- /row -->
 
     </section>
