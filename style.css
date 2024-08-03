@@ -4,7 +4,7 @@ Theme URI: https://lite.preview.artechthemes.com/
 Author: Artech Themes
 Author URI: https://artechthemes.com/
 Description: The Artech Business Theme Child theme for making changes to the original theme without having them overwritten by any updates.
-Version: 1.1
+Version: 2.7
 Template: artech
 Tested up to: 6.5
 Requires PHP: 5.6
@@ -17,7 +17,7 @@ Contributors: jajtechnologies
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-as of Jul 23 14:00
+
 */
 body {
   overflow-x: hidden;
@@ -319,11 +319,13 @@ h2.wp-block-heading {
 .footer-section{
 	background: #000000 !important;
 }
-.footer-section h4{
+.footer-section h4,
+.footer-section .widget-title{
 	color: white;
 	font-size: 1rem;
 	margin-left: -1em;
 	white-space: nowrap;
+	-webkit-text-fill-color: white;
 }
 .footer-section a:not(.btn-primary) {
 	color: #0faf97;
@@ -346,6 +348,22 @@ h2.wp-block-heading {
 	margin-left: 1.222em;
 	white-space: nowrap;
 }
+.footer-main .widget_block {
+	margin-left: 30px;
+}
+.footer-main .widget_block .widget-title {
+	white-space:normal;
+	word-wrap:break-word;
+}
+.footer-main #block-31.widget_block .widget-title {
+	width: 50%;
+  display: block;
+  text-align: center;
+  margin-left: 20%;
+}
+.footer-main #block-31.widget_block {
+	text-align: center;
+}
 .tiktoklink {
 	width: 20px;
   display: inline-block;
@@ -362,7 +380,7 @@ h2.wp-block-heading {
 .page .wp-block-cover:last-child{
  
 }
-.single .section-title {
+.blog-section .section-title {
 	display: none;
 }
 .blog-section .post-item {
@@ -376,6 +394,7 @@ h2.wp-block-heading {
   font-size: 36px;
   line-height: 1.42;
   margin-top: 1rem;
+	text-transform: uppercase;
 }
 .post-content a:not(.btn) {
 	color: #0faf97;
@@ -384,7 +403,10 @@ h2.wp-block-heading {
 .single .meta > .mdot {
 	margin-right:6px;
 }
-h2 strong {
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong{
 	font-weight: 500;
 }
 .single-post-header {
@@ -394,73 +416,3 @@ h2 strong {
 .line-height-lg {
 	line-height: 1.75;
 }
-/* Start is in Customizer exclusively */
-@media screen and (max-width: 767px) {
-	.blog-section{
-		padding:15px;
-	}
-}
-@media (min-width: 1200px) {
-  .h2, h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-	.container{
-		max-width: 2200px;
-	}
-
-}
-@media (min-width: 992px) {
-	.header-main .navbar-nav .nav-item.dropdown .nav-link::after {
-		content: "";
-	}
-		.blog .blog-section .col-lg-6 {
-		width:33.33336%;
-			padding: 15px 30px;
-	}
-	.blog .blog-section .row .col-lg-6:last-of-type {
-		display: grid;
-    width: 100%;
-    grid-template-columns: auto auto auto;
-    gap: 60px;
-	}
-  .mb-lg-0 {
-    margin-bottom: -2em !important;
-  }
-	#section-6,
-.minimum-hgt-lrg,
-.home-container-padded,
-.padded-section-lg {
-  padding: 30px 8vw;
-}
-	.home-hero-wide p.has-x-large-font-size {
-	font-size: 64px !important;
-	font-weight: 600;
-	color: #575656 !important;
-	text-shadow: 0 0 1px #aff;
-  }
-}
-@media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl,
-  .home-cover-wide {
-    max-width: 100vw;
-  }
-	.single-portfolio .blog-section {
-	width:82.5%;
-	margin: 0 auto;
-}
-.single-portfolio .blog-section .post-image {
-	width:82.5%;
-	margin: 1em auto;
-}
-.single-portfolio .blog-section .post-item {
-	padding: 15px 45px;
-}
-
-}
-/* ENDS Added by Larry at Codeable */
