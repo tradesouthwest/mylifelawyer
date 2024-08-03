@@ -5,10 +5,48 @@
  * @param string $parent   Parent theme styles
  * @return wp core enqueue Example for Astra theme but works on most all themes.
  */
-add_action( 'wp_enqueue_scripts', 'astra_child_theme_enqueue_styles', 99 );
+add_action( 'wp_enqueue_scripts', 'artech_child_theme_enqueue_styles', 99 );
 
-function astra_child_theme_enqueue_styles() {
+function artech_child_theme_enqueue_styles() {
 	if ( is_page( '3796' ) ) {
         wp_enqueue_style( 'pt-min', get_stylesheet_directory_uri() . '/pt-min.css' );
     }
 } 
+// recent posts shortcode
+// @ https://digwp.com/2018/08/shortcode-display-recent-posts/
+function artech_child_recent_posts_shortcode($atts, $content = null) {
+	
+	global $post;
+	
+	extract(shortcode_atts(array(
+		'cat'     => '',
+		'num'     => '3',
+		'order'   => 'DESC',
+		'orderby' => 'post_date',
+	), $atts));
+	
+	$args = array(
+		'cat'            => $cat,
+		'posts_per_page' => $num,
+		'order'          => $order,
+		'orderby'        => $orderby,
+	);
+	
+	$output = '';
+	
+	$posts = get_posts($args);
+	
+	foreach($posts as $post) {
+		
+		setup_postdata($post);
+		
+		$output .= '<li><a href="'. get_the_permalink() .'">'. get_the_title() .'</a></li>';
+		
+	}
+	
+	wp_reset_postdata();
+	
+	return '<ul>'. $output .'</ul>';
+	
+}
+add_shortcode('recent_posts', 'artech_child_recent_posts_shortcode'); 
