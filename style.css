@@ -202,15 +202,7 @@ p {
 	position:relative;
 	right:-2em;
 }
-@media (min-width: 782px) {
-  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
-	  margin-left: -12px;
-	}
-.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column p{
-	width:82.5%;
-	margin-left: auto;
-  margin-right: auto;
-}
+
 .btn-primary {
 	background: #0faf97;
 	border-radius: 0;
