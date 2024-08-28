@@ -85,6 +85,23 @@
 	width: 100%;
 	background: #fff;
 }
+.menu-bar .right-menu ul {
+	flex-direction: row;
+	background-color: #fff;
+}
+.right-menu {
+	
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  
+}
+.menu-bar .right-menu ul li {
+  margin-left: -10px;
+}
+.menu-bar .right-menu ul li:first-child {
+	margin-left:15px;
+}
 .blog .blog-section {
 	margin-top: 100px;
 }
@@ -194,6 +211,13 @@ ul.wp-block-list{
 	left: 80px;
 	top: -55px;
 }
+
+@media screen and (min-width: 1300px) {
+.menu-bar .right-menu ul li:last-child{
+	margin-left:-1.67em;
+}
+}
+
 @media screen and (orientation: portrait) and (max-width: 809px){
 	.custom-logo-link img {
 		transform: scale(.75);
@@ -203,7 +227,7 @@ ul.wp-block-list{
   grid-template-rows: auto auto;
   }
 	.navbar {
-		margin-left: 17%;
+		margin-left: 10%;
 	}
 	 .home-reviews-row {
     max-height: 99vh;
@@ -261,7 +285,6 @@ ul.wp-block-list{
 	.container{
 		max-width: 2200px;
 	}
-
 }
 @media (min-width: 782px) {
   .home .container:first-child  {
@@ -280,7 +303,12 @@ ul.wp-block-list{
 	}
 	.blog .blog-section .col-lg-6 {
 		width:33.33336%;
-		padding: 15px 30px;
+		padding: 15px 15px;
+	}
+	.blog .col-lg-10 {
+		margin-left:0;
+		margin-right:0;
+		padding: 0;
 	}
 	.blog .blog-section .row .col-lg-6:last-of-type {
 		display: grid;
