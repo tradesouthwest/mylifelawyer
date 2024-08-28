@@ -58,14 +58,14 @@ p {
 	border-bottom: none;
 }
 .menu-bar .right-menu ul {
-	background: #ffffff;
+	background: transparent;
 }
 .social-media-links {
-	display: flex;
+	/*display: flex;
 	flex-direction: row;
 	margin-top: 1.444em;
 	font-size:x-large;
-	padding-top: 1.4em !important;
+	padding-top: 1.4em !important; */
 }
 .site-title {
   color: #787878;
@@ -264,7 +264,7 @@ p {
   text-shadow: 0 0 2px #ccc;
 }
 .blog-section {
-	padding: 75px 75px;
+	padding: 75px 15px;
 }
 summary {
   background: #fafafa;
@@ -508,7 +508,7 @@ text-align: center;
  
 }
 .blog-section .section-title {
-	display: none;
+	visibility: hidden;
 }
 .blog-section .post-item {
 	border: none;
