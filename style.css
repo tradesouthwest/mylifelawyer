@@ -165,6 +165,34 @@ p {
   background-size: 100% 130%;
   background-position: center;
 }
+.single-portfolio .breadcrumb-section {
+	visibility: hidden;
+	max-height:30px;
+	margin-top:-7em;
+}
+.single-portfolio .crp_related {
+	visibility: hidden;
+	max-height:30px;
+}
+.single-portfolio .header-main {
+  width: 100%;
+}
+.under-thumbnail-large {
+	position: relative;
+}
+.single-portfolio{
+	max-width: 1700px;
+}
+@media screen and (min-width: 980px) {
+.under-thumbnail-large {
+	position: relative;
+  right: -111%;
+  top: -22%;
+	max-width: 500px;
+	white-space: normal;
+	text-align:center
+}
+}
 .sp-testimonial-free-wrapper {
 	width: 63%;
 	margin: 0 auto;

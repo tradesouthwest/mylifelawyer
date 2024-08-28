@@ -98,27 +98,27 @@ do_action('artech_preloader');
 								<ul class="social-media-links nav navbar-nav navbar-right">
 									
 									<li>
-										<a href="http://www.facebook.com/msLaurenLester" title="facebook">
+										<a href="http://www.facebook.com/msLaurenLester" title="facebook" target="_blank">
 											<i class="fa fa-facebook"></i>
 										</a>
 									</li>
 									<li>
-										<a href="https://www.instagram.com/MsLaurenLester" title="instagram">
+										<a href="https://www.instagram.com/MsLaurenLester" title="instagram" target="_blank">
 											<i class="fa fa-instagram"></i>
 										</a>
 									</li>
 									<li>
-										<a href="http://www.linkedin.com/in/MsLaurenLester" title="linkedin">
+										<a href="http://www.linkedin.com/in/MsLaurenLester" title="linkedin" target="_blank">
 											<i class="fa fa-linkedin"></i>
 										</a>
 									</li>
 									<li class="">
-										<a href="https://www.tiktok.com/@affordablelawyer" title="tiktok" class="tiktoklink">
+										<a href="https://www.tiktok.com/@affordablelawyer" title="tiktok" class="tiktoklink" target="_blank">
 											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg><!--<i class="fa fa-tiktok tiktokicon"></i>-->
 										</a>
 									</li>
 									<li>
-										<a href="https://www.youtube.com/@affordablelawyer" title="youtube">
+										<a href="https://www.youtube.com/@affordablelawyer" title="youtube" target="_blank">
 											<i class="fa fa-youtube"></i>
 										</a>
 									</li>

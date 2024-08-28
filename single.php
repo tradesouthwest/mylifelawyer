@@ -39,7 +39,19 @@ artech_breadcrumbs_style();
                 <?php //if($artech_blog_single_layout == 'artech_lsb'): get_sidebar(); endif; ?>
 				<!--<div class="<?php echo esc_attr($col_class); ?>">-->
 
-                        <div class="col-lg-6">
+				            <div class="col-lg-9 centered-col" >
+									<?php if ( has_post_thumbnail() ) { ?>
+										<figure class="post-image ">	
+											<?php the_post_thumbnail('medium'); ?>
+											<!--<div class="meta top">
+												<span class="date">
+													
+												</span>
+											</div>-->
+										</figure>
+									<?php } ?>
+							<!--</div>
+                        <div class="col-lg-8">-->
 							<?php 
 								if( have_posts() ): 
 								while( have_posts() ): the_post(); 
@@ -62,21 +74,11 @@ artech_breadcrumbs_style();
 										
 									</div>
 									
+									
 										
 								</article>
 						</div>
-							<div class="col-lg-6">
-									<?php if ( has_post_thumbnail() ) { ?>
-										<figure class="post-image ">	
-											<?php the_post_thumbnail('medium'); ?>
-											<!--<div class="meta top">
-												<span class="date">
-													
-												</span>
-											</div>-->
-										</figure>
-									<?php } ?>
-							</div>
+							
 							<?php 
 								endwhile; 
 							else: '';
@@ -87,16 +89,8 @@ artech_breadcrumbs_style();
                
 				<?php //if($artech_blog_single_layout == 'artech_rsb'): get_sidebar(); endif; ?>
 			
-			<div class="also-like">
-				<h5>YOU MIGHT ALSO LIKE</h5>
-				<?php 
-				$cat = '';
-				$categories = get_the_category();
-				if ( ! empty( $categories ) ) {
-					$cat = esc_html( $categories[0]->name );	
-				}
-				echo do_shortcode( '[recent_posts cat="' . $cat . '"]' ); ?>
-			</div>
+			
+			
             </div><!-- /row -->
 
     </section>

@@ -69,6 +69,7 @@
 								}
 								?>
 							</div>
+							
 						</article>
 					</div>
                 <?php 

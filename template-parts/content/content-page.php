@@ -46,8 +46,9 @@ $categories = get_the_category();
 				the_content();
 			}
 			?>
-			<!--<span class="date">
-				<a href="<?php echo esc_url(get_month_link(get_post_time('Y'),get_post_time('m'))); ?>"><?php echo esc_html(get_the_date('j')); ?><span><?php echo esc_html(get_the_date('M')); ?></span></a>
-			</span>-->
+			<?php if (  is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag() ) :  ?>
+			<span class="date-after-excerpt">
+				<?php echo esc_html(get_the_date()); ?>
+			</span><?php endif; ?>
 		</div>
 	</article>
